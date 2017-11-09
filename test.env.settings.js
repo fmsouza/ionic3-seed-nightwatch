@@ -22,7 +22,7 @@ module.exports = {
       automationName: 'selendroid',
       platformName: 'android',
       deviceName: 'emulator-5554',
-      app: path.resolve(__dirname, 'platforms/android/build/outputs/apk/android-debug.apk')
+      app: path.resolve(__dirname, 'platforms/android/build/outputs/apk/debug/android-debug.apk')
     }
   },
   ios: {

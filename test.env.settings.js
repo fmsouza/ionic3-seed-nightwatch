@@ -1,3 +1,4 @@
+const path = require('path');
 /*
   * Some capabilities must be set to make sure appium can connect to your device.
   * browserName: leave this empty, we want protractor to use the embedded webview
@@ -20,7 +21,7 @@ module.exports = {
       automationName: 'selendroid',
       platformName: 'android',
       deviceName: 'emulator-5554',
-      app: ''
+      app: path.resolve(__dirname, 'platforms/android/build/outputs/apk/android-debug.apk')
     }
   },
   ios: {
@@ -35,7 +36,7 @@ module.exports = {
       platformName: 'ios',
       platformVersion: '11.1',
       deviceName: 'iPhone Simulator',
-      app: ''
+      app: path.resolve(__dirname, 'platforms/ios/build/emulator/Ionic\ seed.app')
     }
   },
 };

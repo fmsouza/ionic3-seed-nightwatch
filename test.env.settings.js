@@ -18,6 +18,7 @@ module.exports = {
     desiredCapabilities: {
       browserName: '',
       autoWebview: true,
+      isHeadless: false,
       automationName: 'selendroid',
       platformName: 'android',
       deviceName: 'emulator-5554',
@@ -32,10 +33,11 @@ module.exports = {
     silent: true,
     desiredCapabilities: {
       browserName: '',
+      isHeadless: false,
       autoWebview: true,
       platformName: 'ios',
       platformVersion: '11.1',
-      deviceName: 'iPhone Simulator',
+      deviceName: 'iPhone 7',
       app: path.resolve(__dirname, 'platforms/ios/build/emulator/Ionic\ seed.app')
     }
   },

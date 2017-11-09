@@ -1,6 +1,6 @@
 # Ionic 3 seed
 
-This is a seed of Ionic 3 with TypeScript + Karma + Protractor + Appium
+This is a seed of Ionic 3 with TypeScript + Karma + Nightwatch + Appium
 
 ## Table of Contents
  - [Getting Started](#getting-started)

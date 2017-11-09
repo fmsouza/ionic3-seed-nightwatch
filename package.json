@@ -8,6 +8,7 @@
     "url": "https://github.com/fmsouza/ionic3-seed.git"
   },
   "scripts": {
+    "postinstall": "ionic cordova prepare",
     "build": "ionic-app-scripts build",
     "clean": "ionic-app-scripts clean",
     "lint": "ionic-app-scripts lint",
@@ -21,9 +22,7 @@
     "unittest": "karma start ./test/karma.conf.js --single-run",
     "unittest-watch": "karma start ./test/karma.conf.js",
     "test-coverage": "karma start ./test/karma.conf.js --coverage",
-    "e2e": "npm run e2e-update && npm run e2e-test",
-    "e2e-test": "protractor ./test/protractor.conf.js",
-    "e2e-update": "webdriver-manager update --standalone false --gecko false",
+    "e2e": "nightwatch --env android -c test/nightwatch.conf.js",
     "appium": "appium"
   },
   "dependencies": {
@@ -75,13 +74,12 @@
     "karma-phantomjs2-launcher": "0.5.0",
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "2.0.5",
+    "nightwatch": "0.9.16",
     "null-loader": "0.1.1",
-    "protractor": "5.2.0",
+    "selenium-server-standalone-jar": "3.6.0",
     "ts-loader": "3.0.3",
     "ts-node": "3.3.0",
-    "typescript": "2.5.3",
-    "wd": "1.4.1",
-    "wd-bridge": "0.0.2"
+    "typescript": "2.5.3"
   },
   "config": {
     "ionic_aot_write_to_disk": true

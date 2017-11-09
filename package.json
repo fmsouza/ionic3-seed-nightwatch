@@ -18,11 +18,12 @@
     "start": "npm run ionic:serve",
     "ios": "ionic cordova run ios",
     "android": "ionic cordova run android && adb logcat | grep CONSOLE",
-    "test": "npm run unittest && npm run e2e",
+    "test": "npm run unittest && npm run e2e-android && npm run e2e-ios",
     "unittest": "karma start ./test/karma.conf.js --single-run",
     "unittest-watch": "karma start ./test/karma.conf.js",
     "test-coverage": "karma start ./test/karma.conf.js --coverage",
-    "e2e": "nightwatch --env android -c test/nightwatch.conf.js",
+    "e2e-android": "nightwatch --env android -c test/nightwatch.conf.js",
+    "e2e-ios": "nightwatch --env ios -c test/nightwatch.conf.js",
     "appium": "appium"
   },
   "dependencies": {
@@ -34,7 +35,7 @@
     "@angular/http": "4.4.4",
     "@angular/platform-browser": "4.4.4",
     "@angular/platform-browser-dynamic": "4.4.4",
-    "@ionic-native/app-version": "4.3.3",
+    "@ionic-native/app-version": "4.3.2",
     "@ionic-native/core": "4.3.2",
     "@ionic-native/keyboard": "4.3.2",
     "@ionic-native/splash-screen": "4.3.2",
@@ -96,7 +97,6 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-device": {},
-      "ionic-plugin-keyboard": {},
       "cordova-plugin-app-version": {}
     }
   }

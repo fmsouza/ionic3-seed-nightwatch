@@ -1,11 +1,11 @@
-const MAX_WAIT = 1000;
+const MAX_WAIT = 5000;
 
 module.exports = {
-  'Home -> Homepage renders correctly': browser => browser
-    .url('/')
-    .waitForElementVisible('body', MAX_WAIT)
-    .assert.title('Ionic')
+  'Home -> Homepage renders correctly': browser =>
+    browser
+      .waitForElementVisible('body', MAX_WAIT)
+      .assert.title('Ionic')
 
-    .waitForElementVisible('#pkgname', MAX_WAIT)
-    .assert.containsText('#pkgname', 'io.ionic.seed')
+      .waitForElementVisible('#pkgname', MAX_WAIT)
+      .assert.containsText('#pkgname', 'io.ionic.seed')
 };

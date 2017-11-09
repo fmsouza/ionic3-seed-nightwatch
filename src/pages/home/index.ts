@@ -23,6 +23,7 @@ export class HomePage {
 
     public ionViewWillLoad(): void {
       this.appVersion.getPackageName()
+        .catch(e => e)
         .then(packageName => this.packageName = packageName);
     }
 }

@@ -1,13 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { NgModule, ErrorHandler } from '@angular/core';
-
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-
-import { AppVersion } from '@ionic-native/app-version';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { IonicStorageModule } from '@ionic/storage';
 
 import { Application } from './app.component';
@@ -21,9 +15,6 @@ const COMPONENTS: any = [
 
 const providers: any = [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    AppVersion,
-    StatusBar,
-    SplashScreen,
     ...Providers
 ];
 

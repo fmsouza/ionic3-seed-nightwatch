@@ -3,7 +3,6 @@ import { Nav, Platform } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { DEFAULT_PAGE, DRAWER_LINKS, MenuItem } from '../components';
-import strings from '../strings/index';
 
 @Component({
     templateUrl: 'app.template.html'
@@ -14,10 +13,6 @@ export class Application {
     @ViewChild(Nav) public nav: Nav;
 
     public rootPage: any = DEFAULT_PAGE;
-
-    public get Text(): any {
-        return strings;
-    }
 
     // List of pages that can be navigated to from the left menu
     // the left menu only works after login

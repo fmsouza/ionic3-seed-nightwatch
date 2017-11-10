@@ -4,7 +4,7 @@
 
       <ion-header>
           <ion-toolbar>
-              <ion-title>{{ Text.MENU_TITLE }}</ion-title>
+              <ion-title>Menu</ion-title>
           </ion-toolbar>
       </ion-header>
 
@@ -12,7 +12,7 @@
 
           <ion-list no-lines>
               <ion-list-header>
-                  {{ Text.MENU_HEADER_PAGES }}
+                  Pages
               </ion-list-header>
               <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
           <ion-icon item-left [name]="p.icon"></ion-icon>

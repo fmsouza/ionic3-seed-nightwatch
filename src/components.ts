@@ -1,5 +1,4 @@
 import * as Pages from './pages';
-import strings from './strings';
 
 export interface MenuItem {
     title: string;
@@ -23,7 +22,7 @@ export const PAGES: any = [
 ];
 
 export const DRAWER_LINKS: MenuItem[] = [
-    { title: strings.MENU_OPTION_HOME, icon: 'home', component: Pages.HomePage, home: true },
+    { title: 'Home', icon: 'home', component: Pages.HomePage, home: true },
 ];
 
 export const DEEP_LINKS: DeepLink[] = [

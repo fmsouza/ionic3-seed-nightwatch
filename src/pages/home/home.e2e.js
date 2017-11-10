@@ -4,8 +4,6 @@ module.exports = {
   'Home -> Homepage renders correctly': browser =>
     browser
       .waitForElementVisible('body', MAX_WAIT)
-      .assert.title('Ionic')
-
       .waitForElementVisible('#pkgname', MAX_WAIT)
       .assert.containsText('#pkgname', 'io.ionic.seed')
 };
